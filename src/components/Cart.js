@@ -16,7 +16,9 @@ const Cart = () => {
             {cartPokemon.map((pokemon) => {
                 
                 return(
-                <div className="d-flex justify-content-evenly bg-gradient m-2 p-2 border rounded-pill ">
+                <div className="border border-warning m-2 bg-gradient rounded-pill  d-flex flex-row align-items-center justify-content-evenly">
+                    <h5>{pokemon.id +1}</h5>
+                    <img src={pokemon.img} ></img>
                     <h5>{pokemon.name}</h5>
                     <button className="btn btn-warning ">Delete Pokemon</button>
                 </div>

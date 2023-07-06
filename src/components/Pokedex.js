@@ -33,7 +33,7 @@ const Pokedex = () => {
                         <img className="imgPokemon" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i + 1}.png`} />
 
                         <h5 className="namePokemon">{onePokemon.name}</h5>
-                        <button className="btn btn-success" onClick={() => addToCart(onePokemon)} >Add to Cart</button>
+                        <button className="btn btn-success" onClick={() => addToCart({name:onePokemon.name,id:i,img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i + 1}.png`})} >Add to Cart</button>
 
 
                     </div>
