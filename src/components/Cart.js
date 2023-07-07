@@ -10,13 +10,13 @@ const Cart = () => {
 
     console.log(cartPokemon);
     return (
-        <div className="bg-primary">
-            <h1 className="bg-warning rounded-pill" >POKECART</h1>
+        <div className="bg-cover bg-[url(https://cdn.dribbble.com/users/177498/screenshots/2663047/media/9bdd57f62f770e223f0af56425d17a0d.jpg)]">
+            <h1 className="p-2  text-yellow-300 bg-gray-950 bg-opacity-80 rounded-pill" >POKECART</h1>
 
             {cartPokemon.map((pokemon) => {
 
                 return (
-                    <div className="border border-warning m-2 bg-gradient rounded-pill  d-flex flex-row align-items-center justify-content-evenly">
+                    <div className=" bg-yellow-500 bg-opacity-70 m-2  rounded-pill  d-flex flex-row align-items-center justify-content-evenly">
                         <h5>{pokemon.id + 1}</h5>
                         <img src={pokemon.img} ></img>
                         <h5>{pokemon.name}</h5>

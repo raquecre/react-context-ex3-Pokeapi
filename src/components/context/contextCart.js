@@ -7,15 +7,17 @@ export default function CartContextProvider({ children }) {
 	/*setCartPokemon({img: " ", id: "", name:""})  */
 
 	const addToCart = (pokemon) => {
-		setCartPokemon([...cartPokemon, pokemon])
+		
+			setCartPokemon([...cartPokemon, pokemon])
+		
 
 		console.log(cartPokemon);
 	}
 
 	const deleteToCart = (pokemon) => {
 		const newCart = cartPokemon.filter(pokemonFav => pokemonFav !== pokemon)
-		
-		 setCartPokemon(newCart) 
+
+		setCartPokemon(newCart)
 	}
 
 
