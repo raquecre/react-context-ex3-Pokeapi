@@ -5,8 +5,8 @@ import Cart from './components/Cart';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './components/NavBar';
 import { Route, Routes } from 'react-router-dom';
-import CartContextProvider, { CartContext } from './components/context/contextCart';
-import React, { useContext } from "react"
+import CartContextProvider  from './components/context/contextCart';
+import React from "react"
 
 function App() {
   
