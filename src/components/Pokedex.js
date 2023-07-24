@@ -10,9 +10,7 @@ const Pokedex = () => {
 
     const [pokemon, setPokemon] = useState([])
 
-    /* const { addToCart } = useContext(CartContext) */
-
-    const { cartPokemon, setCartPokemon, addToCart } = useContext(CartContext)
+    const { addToCart } = useContext(CartContext)
 
   
 
@@ -33,7 +31,7 @@ const Pokedex = () => {
                 return (
                     <div className=" bg-blue-600 bg-opacity-75 m-4 bg-y-200 rounded-pill  d-flex flex-row align-items-center justify-content-evenly">
                          <h5 className="idPokemon">{i + 1}</h5>
-                        <img className="imgPokemon" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i + 1}.png`} />
+                        <img alt="" className="imgPokemon" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i + 1}.png`} />
 
                         <h5 className="namePokemon">{onePokemon.name}</h5>
                         <button className="bg-opacity-95 text-white bg-gray-900 hover:bg-gray-800  font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2" onClick={() => addToCart({name:onePokemon.name, id:i, img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i + 1}.png`})} >Add to POKECART</button>

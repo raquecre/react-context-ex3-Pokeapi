@@ -1,7 +1,7 @@
 
 /* import React, { useContext } from "react"
 import { CartContext } from "./context" */
-import React, { useContext, useState } from "react"
+import React, { useContext, } from "react"
 
 import { CartContext } from "./context/contextCart"
 
@@ -18,7 +18,7 @@ const Cart = () => {
                 return (
                     <div className=" bg-yellow-500 bg-opacity-70 m-2  rounded-pill  d-flex flex-row align-items-center justify-content-evenly">
                         <h5>{pokemon.id + 1}</h5>
-                        <img src={pokemon.img} ></img>
+                        <img alt="" src={pokemon.img} ></img>
                         <h5>{pokemon.name}</h5>
                         <button className="btn btn-warning" onClick={() => deleteToCart(pokemon)} >Delete Pokemon</button>
                     </div>
